@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+  
+    <div class="container">
+      <div id="users-container" ></div>
+      <form  class="container mt-5">
+              <div class="row">
+                 <label for="name">Name</label>
+                  <input id="name" type="text">
+                  <label for="email">Email</label>
+                  <input type="email"  id="email">
+                  <label for="phoneNum">Phone Number</label>
+                  <input type="text"  id="phoneNum">
+              </div>
+              
+          </form>
+      </div>
+      
+      <button  id="fetbtn" onclick="onFetchUserClick()" class="btn btn-primary btn-lg m-3">Fetch User</button>
+      <button  id="crebtn" onclick="onCreateUserClick()" class="btn btn-secondary btn-lg m-3">Create User</button>
+      <button type="button" id="btnUpdate" onclick="onUpdateUserClick()" class="btn btn-success m-3 btn-lg">Update User</button>
+      <button type="button" onclick="onDeleteUserClick()"  class="btn btn-danger  m-3 btn-lg">Delete User</button>
+      <div id="container-users"></div>
+      <script type="module" src="src/main.ts"></script>
+  </body>
+</html>
